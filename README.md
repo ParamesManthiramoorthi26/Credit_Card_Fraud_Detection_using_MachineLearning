@@ -16,11 +16,23 @@ After testing various machine learning models, Random Forest provided the best r
 * *50% Recall* – It caught half of the actual fraud cases but still missed some.
 * *F1-Score of 0.65* – A moderate balance between precision and recall.
 
+## Confusion Matrix Breakdown
+* True Negatives (73) – Legitimate transactions correctly classified.
+* False Positives (1) – One legitimate transaction was wrongly flagged as fraud.
+* False Negatives (13) – 13 fraudulent cases were missed, which the model failed to detect.
+* True Positives (13) – 13 fraud cases correctly identified.
+
+## Technologies Used: 
+* Python, Scikit-Learn, Random Forest, SMOTE.
+  
 # What We Learned
 * *Preprocessing is Key* – Cleaning data, encoding labels, and using resampling techniques like upsampling helped improve accuracy.
 * *Balancing the Data Matters* – Fraud cases were rare, so models like Logistic Regression, SVM, and Naïve Bayes struggled to detect them effectively.
 * *Random Forest Stood Out* – It handled the imbalance better than other models.
-
+  
+## Model Performance: 
+* Accuracy, Precision, Recall, F1-Score.
+  
 ## Challenges & Next Steps
 * The biggest challenge? Fraud is rare, making it tricky to train a model that catches all cases without over-flagging normal transactions.
 
